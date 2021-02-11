@@ -1,0 +1,17 @@
+<core:FragmentDefinition
+   xmlns="sap.m"
+   xmlns:core="sap.ui.core" >
+   <ViewSettingsDialog id="filterDialog" confirm="onConfirm">
+   	<groupItems>
+   	  <ViewSettingsItem text="City" key="Address/City"/>
+   	</groupItems>
+	 <filterItems>
+	 	<ViewSettingsFilterItem key="Age" text="Age" multiSelect="false">
+	     <items>
+	     	<ViewSettingsItem key="Age__GT__25__X"  text="Age greater than 25" />
+	     	<ViewSettingsItem key="Address/City__EQ__Portland__X"  text="City Portland" />
+	     </items>	
+	 	</ViewSettingsFilterItem>
+	 </filterItems>
+   </ViewSettingsDialog>
+</core:FragmentDefinition>

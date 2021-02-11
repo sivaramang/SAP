@@ -1,0 +1,49 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="SFG.controller.Main"
+	displayBlock="true">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<Table id="Table" items="{/value/}">
+						<headerToolbar>
+						  <Toolbar>
+						   <Button icon="sap-icon://drop-down-list"
+							       press="onOpenView" />
+						  </Toolbar>
+						</headerToolbar>
+						<columns>
+							<Column>
+								<header>
+									<Label text="Id" />
+								</header>
+							</Column>
+							<Column>
+								<header>
+									<Label text="Age" />
+								</header>
+							</Column>
+							<Column>
+								<Label text="City" />
+							</Column>
+
+							<Column>
+								<Label text="Country"/>
+							</Column>
+							
+						</columns>
+						<items>
+							<ColumnListItem >
+								<cells>
+									<Text text= "{PersonID}" />
+									<Text text= "{Age}" />
+									<Text text= "{Address/City}" />
+									<Text text = "{Address/Country}" />
+								</cells>
+							</ColumnListItem>
+						  </items>
+						</Table>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</mvc:View>
